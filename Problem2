@@ -1,0 +1,19 @@
+#include<iostream>
+	using namespace std;
+	int main()
+	{
+	    int bal;
+	    double gall;
+	    
+	    cout<<"How much is your consumption(in gallons)? "<<endl;
+	    cin>> gall;
+	    cout<<"How much is your unpaid balance? Php "<<endl;
+	    cin>> bal;
+	    
+	    if (bal==0)
+	    cout<<"Your water bill is " << (35 + (gall*1.10));
+	    else 
+	    cout<< "Your water bill is " << (55 + (gall*1.10));
+	    
+	    return 0;
+		}	
