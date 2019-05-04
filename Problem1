@@ -1,0 +1,39 @@
+#include <iostream>
+	using namespace std;
+	int main()
+	{
+	    int package;
+		int duration;
+		
+	            cout<<"Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr."<<endl;
+                          cout<<"Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr."<<endl;
+                          cout<<"Package C: For P1995/mo of unlimited access is provided."<<endl;
+                          cout<<endl;
+
+		
+                          cout<<"What package did you purchased? (1-PackageA; 2-PackageB; 3-PackageC)? "<<endl;
+		cin>>package;
+		cout<<"How many hours did you use this month? "<<endl;
+		cin>>duration;
+		
+		switch(package)
+		{ 
+		    case 1:
+		    if (duration>0 && duration<=10)
+		    cout<< "Package A: Php 995 is your monthly due";
+		    else if (duration>10)
+		    cout<< "Package A: Php " << (((duration-10)*20) + 995) << " is your monthly due";
+		    break;
+		    
+		    case 2:
+		    if (duration>0 && duration<=20)
+		    cout<< "Package B: Php 1495 is your monthly due";
+		    else if (duration>20)
+cout<< "Package B: Php " << (((duration-20)*10) + 1495) << " is your monthly due";
+		    break;
+		    
+		    case 3:
+		    cout<<"Package C: Php 1995 is your monthly due";
+		}
+		    return 0;
+		}	
