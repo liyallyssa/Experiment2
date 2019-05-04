@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+     int num1 = 0,num2 = 1,num3 = 0;
+
+    for (int i = 1; i <= 22; ++i)
+    {
+        if(i == 1)
+        {
+            cout << num1 << ",";
+            continue;
+        }
+        if(i == 2)
+        {
+            cout <<num2 << ",";
+            continue;
+        }
+       num3 = num1 +num2;
+        num1 = num2;
+        num2 =num3;
+        
+        cout <<num3 << ",";
+    }
+    return 0;
+}
+Problem 7
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num1;
+    int sum;
+    
+    
+    cout <<"Enter a num1ber: ";
+    cin >> num1;
+   
+   	while (num1 > 0) 
+   	{
+   		sum = 0;
+    		for(int i=1; i<=num1; i++) {
+				sum=sum+i;}
+    cout << "The sum of all whole num1bers from 1 to " << num1 << " is " << sum << endl;
+    
+	cout<<"Enter a num1ber: ";
+	cin>> num1; 
+	}
+	cout<< "Thank you!";
+    return 0;
+    
+}
